@@ -1,8 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { filterByMusic } from '../actions/filterAction';
 import { Link } from 'react-router-dom';
 
-const MainScreen = () => {
-    const handleClick = () => console.log('dispatch action!');
+const MainScreen = props => {
+    const handleClick = () => props.filterByMusic('stocazzo');
     return (
         <div>
             <ul>
@@ -25,4 +27,7 @@ const MainScreen = () => {
     );
 };
 
-export default MainScreen;
+export default connect(
+    null,
+    { filterByMusic }
+)(MainScreen);

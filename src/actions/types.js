@@ -1,0 +1,2 @@
+export const FILTER_MUSIC = 'FILTER_MUSIC';
+export const FILTER_SPORT = 'FILTER_SPORT';
