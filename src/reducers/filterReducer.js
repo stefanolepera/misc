@@ -14,8 +14,7 @@ export const filterReducer = (state = initialState, action) => {
         case FILTER_SPORT:
             return {
                 ...state,
-                gameName: action.payload,
-                currentFilter: 0
+                currentFilter: action.payload
             };
         default:
             return state;

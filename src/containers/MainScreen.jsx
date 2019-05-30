@@ -4,7 +4,7 @@ import { filterByMusic } from '../actions/filterAction';
 import { Link } from 'react-router-dom';
 
 const MainScreen = props => {
-    const handleClick = () => props.filterByMusic('stocazzo');
+    const handleClick = () => props.filterByMusic('musicFilter!');
     return (
         <div>
             <ul>
